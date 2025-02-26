@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Vegetables</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/script.js"></script>
+     <script defer src="js/cart.js"></script> <!-- JavaScript for cart functionality -->
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa fa-truck" aria-hidden="true"></i> Farm Store</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="leafy-vegetables.html">Leafy Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+     <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fa fa-search"></label> <!-- Removed extra space in 'for' attribute -->
+        </form>
+        <section class="cart">
+    <div class="shopping-cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <h3 id="total-cost">Total: $0.00</h3>
+        <button id="clear-cart" style="background: red; color: white; padding: 8px 12px; border: none; cursor: pointer;">
+            Clear Cart
+        </button>
+    </div>
+</section>
+
+
+
+        <form action="#" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box" required>
+            <input type="password" placeholder="Your Password" class="box" required>
+            <p>Forgot Your Password? <a href="#">Click Here</a></p> <!-- Corrected "Forget" to "Forgot" -->
+            <p>Don't Have An Account? <a href="#">Create Now</a></p> <!-- Added question marks for clarity -->
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+</header>
+
+<section class="products" id="vegetables">
+    <h3 class="heading">Fresh <span>Vegetables</span></h3>
+    <div class="box-container">
+
+        <!-- Vegetable Items -->
+        <div class="box">
+            <img src="images/tomato.jpg" alt="Tomato">
+            <h3>Tomato</h3>
+            <span class="price">$1.50 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/potato.jpg" alt="Potato">
+            <h3>Potato</h3>
+            <span class="price">$1.00 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/onion.jpg" alt="Onion">
+            <h3>Onion</h3>
+            <span class="price">$1.20 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/carrot.jpg" alt="Carrot">
+            <h3>Carrot</h3>
+            <span class="price">$2.00 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/cabbage.jpg" alt="Cabbage">
+            <h3>Cabbage</h3>
+            <span class="price">$1.80 / each</span>
+            <select class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/cauliflower.jpg" alt="Cauliflower">
+            <h3>Cauliflower</h3>
+            <span class="price">$2.50 / each</span>
+            <select class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/cucumber.jpg" alt="Cucumber">
+            <h3>Cucumber</h3>
+            <span class="price">$1.30 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

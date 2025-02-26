@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/cart.js"></script>  <!-- JavaScript for cart functionality -->
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa fa-truck" aria-hidden="true"></i> Farm Store</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="leafy-vegetables.html">Leafy Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+     <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fa fa-search"></label> <!-- Removed extra space in 'for' attribute -->
+        </form>
+        <section class="cart">
+    <div class="shopping-cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <h3 id="total-cost">Total: $0.00</h3>
+        <button id="clear-cart" style="background: red; color: white; padding: 8px 12px; border: none; cursor: pointer;">
+            Clear Cart
+        </button>
+    </div>
+</section>
+
+
+
+        <form action="#" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box" required>
+            <input type="password" placeholder="Your Password" class="box" required>
+            <p>Forgot Your Password? <a href="#">Click Here</a></p> <!-- Corrected "Forget" to "Forgot" -->
+            <p>Don't Have An Account? <a href="#">Create Now</a></p> <!-- Added question marks for clarity -->
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+</header>
+<section class="products" id="fruits">
+    <h3 class="heading">Fresh <span>Fruits</span></h3>
+    <div class="box-container">
+        
+        <!-- Fruit Items -->
+        <div class="box">
+            <img src="images/apple.jpg" alt="Apple">
+            <h3>Apple</h3>
+            <span class="price">$2.50 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+           <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+
+        </div>
+
+        <div class="box">
+            <img src="images/banana.jpg" alt="Banana">
+            <h3>Banana</h3>
+            <span class="price">$1.80 / dozen</span>
+            <select class="quantity">
+                <option value="1">1 dozen</option>
+                <option value="2">2 dozen</option>
+                <option value="3">3 dozen</option>
+                <option value="4">4 dozen</option>
+                <option value="5">5 dozen</option>
+            </select>
+            <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+
+        </div>
+        <div class="box">
+            <img src="images/kiwi.jpg" alt="Kiwi">
+            <h3>Kiwi</h3>
+            <span class="price">$1.80 / per</span>
+            <select class="quantity">
+                <option value="1">1 </option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 </option>
+            </select>
+           <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+
+        </div>
+        <div class="box">
+            <img src="images/guvuva.jpg" alt="Guvuva">
+            <h3>Guvuva</h3>
+            <span class="price">$1.80 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+           <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+
+        </div>
+
+        <div class="box">
+            <img src="images/oranges.jpg" alt="Orange">
+            <h3>Orange</h3>
+            <span class="price">$3.00 / kg</span>
+            <select class="quantity">
+                <option value="1">1 kg</option>
+                <option value="2">2 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+           <button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+
+        </div>
+
+        <!-- Add More Fruits Here -->
+        <div class="box">
+            <img src="images/grapes.jpg" alt="Grapes">
+            <h3>Grapes</h3>
+            <span class="price">$2.75 / kg</span><select class="quantity"><option value="1">1 kg</option><option value="2">2 kg</option><option value="3">3 kg</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+        <div class="box"><img src="images/mango.jpg" alt="Mango"><h3>Mango</h3><span class="price">$4.00 / kg</span><select class="quantity"><option value="1">1 kg</option><option value="2">2 kg</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+        <div class="box"><img src="images/strawberry.jpg" alt="Strawberry"><h3>Strawberry</h3><span class="price">$5.50 / box</span><select class="quantity"><option value="1">1 box</option><option value="2">2 boxes</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+        <div class="box"><img src="images/pineapple.jpg" alt="Pineapple"><h3>Pineapple</h3><span class="price">$3.25 / each</span><select class="quantity"><option value="1">1</option><option value="2">2</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+        <div class="box"><img src="images/papaya.jpg" alt="Papaya"><h3>Papaya</h3><span class="price">$2.00 / each</span><select class="quantity"><option value="1">1</option><option value="2">2</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+        <div class="box"><img src="images/pear.jpg" alt="Pear"><h3>Pear</h3><span class="price">$2.90 / kg</span><select class="quantity"><option value="1">1 kg</option><option value="2">2 kg</option></select><button class="add-to-cart" onclick="addToCart(event)">Add to Cart</button>
+</div>
+
+    </div>
+</section>
+
+<script>
+    document.getElementById("clear-cart").addEventListener("click", () => {
+        localStorage.removeItem("cart");
+        cart = [];
+        updateCartDisplay();
+    });
+</script>
+
+
+</body>
+</html>

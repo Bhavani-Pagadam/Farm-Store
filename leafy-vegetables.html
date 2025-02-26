@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy Vegetables</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/cart.js"></script>  <!-- JavaScript for cart functionality -->
+</head>
+<body>
+
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa fa-truck" aria-hidden="true"></i> Farm Store</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="vegetables.html">Vegetables</a>
+        <a href="leafy-vegetables.html">Leafy Vegetables</a>
+        <a href="fruits.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+     <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here">
+            <label for="search-box" class="fa fa-search"></label> <!-- Removed extra space in 'for' attribute -->
+        </form>
+        <section class="cart">
+    <div class="shopping-cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <h3 id="total-cost">Total: $0.00</h3>
+        <button id="clear-cart" style="background: red; color: white; padding: 8px 12px; border: none; cursor: pointer;">
+            Clear Cart
+        </button>
+    </div>
+</section>
+
+
+
+        <form action="#" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your Email" class="box" required>
+            <input type="password" placeholder="Your Password" class="box" required>
+            <p>Forgot Your Password? <a href="#">Click Here</a></p> <!-- Corrected "Forget" to "Forgot" -->
+            <p>Don't Have An Account? <a href="#">Create Now</a></p> <!-- Added question marks for clarity -->
+            <input type="submit" value="Login Now" class="btn">
+        </form>
+</header>
+
+<section class="products" id="leafy-vegetables">
+    <h3 class="heading">Fresh <span>Leafy Vegetables</span></h3>
+    <div class="box-container">
+
+        <!-- Leafy Vegetable Items -->
+        <div class="box">
+            <img src="images/spinach.jpg" alt="Spinach">
+            <h3>Spinach</h3>
+            <span class="price">$1.50 / bunch</span>
+            <select class="quantity">
+                <option value="1">1 bunch</option>
+                <option value="2">2 bunches</option>
+                <option value="3">3 bunches</option>
+                <option value="4">4 bunches</option>
+                <option value="5">5 bunches</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/thotakura.jpg" alt="Thotakura">
+            <h3>thotakura</h3>
+            <span class="price">$2.00 / bunch</span>
+            <select class="quantity">
+                <option value="1">1 bunch</option>
+                <option value="2">2 bunches</option>
+                <option value="3">3 bunches</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/coriander.jpg" alt="Coriander">
+            <h3>Coriander</h3>
+            <span class="price">$1.20 / bunch</span>
+            <select class="quantity">
+                <option value="1">1 bunch</option>
+                <option value="2">2 bunches</option>
+                <option value="3">3 bunches</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/mint.jpg" alt="Mint">
+            <h3>Mint</h3>
+            <span class="price">$1.80 / bunch</span>
+            <select class="quantity">
+                <option value="1">1 bunch</option>
+                <option value="2">2 bunches</option>
+                <option value="3">3 bunches</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="box">
+            <img src="images/Gongura.jpg" alt="Gongura">
+            <h3>Gongura</h3>
+            <span class="price">$1.50 / bunch</span>
+            <select class="quantity">
+                <option value="1">1 bunch</option>
+                <option value="2">2 bunches</option>
+                <option value="3">3 bunches</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+       <div class="box">
+            <img src="images/lettuce.jpg" alt="Lettuce">
+            <h3>Lettuce</h3>
+            <span class="price">$2.00 / each</span>
+            <select class="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
